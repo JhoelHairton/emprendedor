@@ -1,0 +1,129 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #2C3E50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin: 10px 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav .active {
+    background-color: #1ABC9C;
+}
+
+/* Submenús */
+.submenu {
+    list-style: none;
+}
+
+.submenu > a {
+    padding-left: 30px;
+}
+
+.sub-menu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sub-menu li {
+    margin: 5px 0;
+}
+
+.sub-menu a {
+    font-size: 16px;
+}
+
+.submenu.active .sub-menu {
+    display: block;
+}
+
+/* Iconos */
+.icon {
+    margin-right: 10px;
+}
+
+/* Flecha de submenú */
+.arrow {
+    float: right;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Estilos para hacer que el sidebar sea más responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .sidebar-nav li {
+        text-align: center;
+    }
+}
